@@ -9,9 +9,6 @@ from telegram.ext import Application, CommandHandler, ContextTypes, CallbackQuer
 import sqlite3
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8060657593:AAEmYvrtWE5iLwCikaDna3ZGtPcUs2eYzRg")
-
-
 # Настройка логирования
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -446,4 +443,5 @@ async def main():
 
 
 if __name__ == "__main__":
+
     asyncio.run(main())
